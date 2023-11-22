@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conheça nossos produtos</title>
+    <link rel="stylesheet" href="Styles/produtos.css">
+    <!-- Links de fontes do Google para ícone -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <!-- Adicionar Favicon -->
+    <link rel="icon" href="Images/produtos.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">Coffee<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="depoimentos.html">Feedbacks</a></li>
+          <li><a href="sobre_nos.html">Sobre nós</a></li>
+          <li><a href="fale_conosco.html">Fale conosco</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <h2>Conheça nossa linha de produtos!</h2>
+            <div class="produtos">
+                <div class="produto" id="cafeExpresso">
+                    <h3>Café Expresso</h3>
+                    <p class="descricao">Um café forte e encorpado, preparado na medida certa.</p>
+                </div>
+                <div class="produto" id="cafeCoado">
+                    <h3>Café Coado</h3>
+                    <p class="descricao">Um café suave e aromático, filtrado com cuidado para preservar os sabores.</p>
+                </div>
+                <div class="produto" id="cafeLeite">
+                    <h3>Café com Leite</h3>
+                    <p class="descricao">Uma combinação perfeita de café encorpado com a suavidade do leite.</p>
+                </div>
+                <div class="produto" id="cappuccinoItaliano">
+                    <h3>Cappuccino Italiano</h3>
+                    <p class="descricao">Um clássico italiano, com café, leite vaporizado e espuma de leite cremosa.</p>
+                </div>
+                <div class="produto" id="cappuccinoKitKat">
+                    <h3>Cappuccino KitKat</h3>
+                    <p class="descricao">A deliciosa combinação do cappuccino com o sabor irresistível do chocolate KitKat.</p>
+                </div>
+                <div class="produto" id="vanilla">
+                    <h3>Vanilla</h3>
+                    <p class="descricao">Um café suave com um toque de baunilha, proporcionando uma experiência única.</p>
+                </div>
+                <div class="produto" id="nutelatte">
+                    <h3>Nutelatte</h3>
+                    <p class="descricao">Um latte cremoso com o sabor irresistível da avelã e do chocolate Nutella.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>

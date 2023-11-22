@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks</title>
+    <link rel="stylesheet" href="Styles/depoimentos.css">
+    <!-- Links de fontes do Google para ícone -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <!-- Adicionar Favicon -->
+    <link rel="icon" href="Images/feedback-do-cliente.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">Coffee<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="depoimentos.html">Feedbacks</a></li>
+          <li><a href="sobre_nos.html">Sobre nós</a></li>
+          <li><a href="fale_conosco.html">Fale conosco</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <h2>Deixe seu Feedback</h2>
+                <div class="feedback-section">
+                    <!-- Exibição de Feedbacks Antigos -->
+                    <div class="feedback">
+                        <div class="estrelas">★★★★★</div>
+                        <p class="comentario">Excelentes produtos! Recomendo a todos.</p>
+                    </div>
+                    <div class="feedback">
+                        <div class="estrelas">★★★★★</div>
+                        <p class="comentario">Produtos de excelente qualidade e um ótimo atendimento!</p>
+                    </div>
+        
+                    <!-- Formulário para Novo Feedback -->
+                    <form id="feedbackForm" action="sucesso_feedback.html">
+                        <div class="avaliacao">
+                            <input type="radio" name="estrelas" id="5estrelas" value="5">
+                            <label for="5estrelas">★★★★★</label>
+                            <input type="radio" name="estrelas" id="4estrelas" value="4">
+                            <label for="4estrelas">★★★★☆</label>
+                            <input type="radio" name="estrelas" id="3estrelas" value="3">
+                            <label for="3estrelas">★★★☆☆</label>
+                            <input type="radio" name="estrelas" id="2estrelas" value="2">
+                            <label for="2estrelas">★★☆☆☆</label>
+                            <input type="radio" name="estrelas" id="1estrela" value="1">
+                            <label for="1estrela">★☆☆☆☆</label>
+                        </div>
+                        <textarea id="comentario" placeholder="Digite seu feedback"></textarea>
+                        <button type="submit">Enviar Feedback</button>
+                    </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>

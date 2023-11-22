@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt--br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/peca_agora.css">
+    <!-- Adicionar Favicon -->
+    <link rel="icon" href="Images/pedido.png" type="image/x-icon">
+    <title>Pedido</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <a class="logo" href="index.html">Coffee<span>.</span></a>
+          <ul class="menu-links">
+            <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="depoimentos.html">Feedbacks</a></li>
+            <li><a href="sobre_nos.html">Sobre nós</a></li>
+            <li><a href="fale_conosco.html">Fale conosco</a></li>
+          </ul>
+          <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+      </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1>Faça seu pedido!</h1>
+            
+            <form action="sucesso_pedido.html" method="get">
+                <h4>Selecione o produto:</h4>
+
+                <div class="opcao-cafe">
+                    <input type="checkbox" id="expresso" name="produto" value="expresso">
+                    <label for="expresso">Café Expresso</label>
+                </div>
+
+                <div class="opcao-cafe">
+                    <input type="checkbox" id="coado" name="produto" value="coado">
+                    <label for="coado">Café Coado</label>
+                </div>
+
+                <div class="opcao-cafe">
+                    <input type="checkbox" id="leite" name="produto" value="leite">
+                    <label for="leite">Café com Leite</label>
+                </div>
+
+                <div class="opcao-cafe">
+                    <input type="checkbox" id="cappuccino_italiano" name="produto" value="cappuccino_italiano">
+                    <label for="cappuccino_italiano">Cappuccino Italiano</label>
+                </div>
+                
+                <div class="opcao-cafe">
+                    <input type="checkbox" id="cappuccino_kitkat" name="produto" value="cappuccino_kitkat">
+                    <label for="cappuccino_kitkat">Cappuccino KitKat</label>
+                </div>
+                
+
+                <div class="opcao-cafe">
+                    <input type="checkbox" id="vanilla" name="produto" value="vanilla">
+                    <label for="vanilla">Vanilla</label>
+                </div>
+
+                <div class="opcao-cafe">
+                    <input type="checkbox" id="nutelatte" name="produto" value="nutelatte">
+                    <label for="nutelatte">Nutelatte</label>
+                </div>
+
+                <!-- Adicione mais opções de café conforme necessário -->
+
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes" rows="4" placeholder="Observações..."></textarea>
+
+                <input type="submit" value="Enviar Pedido">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

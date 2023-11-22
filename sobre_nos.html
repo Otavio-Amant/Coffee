@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saiba mais sobre nós</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <!-- Links de fontes do Google para ícone -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <!-- Adicionar Favicon -->
+    <link rel="icon" href="Images/maquina-de-cafe.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">Coffee<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="depoimentos.html">Depoimentos</a></li>
+          <li><a href="sobre_nos.html">Sobre nós</a></li>
+          <li><a href="fale_conosco.html">Fale conosco</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <p>
+        </p>
+        <h3>Bem vindo à Coffee - Onde o Café Ganha Vida!</h3>
+        <p>
+            Somos apaixonados por café e dedicados a proporcionar a você uma experiência única e autêntica em cada xícara. 
+            Com mais de 5 anos de dedicação ao mercado de café, nos tornamos uma referência na arte de apreciar a bebida 
+            mais amada do mundo.
+        </p>
+        <p>
+            Originários de Santa Rosa do Sul - SC, nosso compromisso vai além de simplesmente fornecer café excepcional; 
+            buscamos enaltecer as ricas tradições e histórias que envolvem cada grão que cultivamos. 
+            Nossas plantações estão localizadas em regiões ideais para o 
+            cultivo de café de alta qualidade, resultando em sabores distintos e aromas envolventes.
+        </p>
+        <p>
+            Além de nossa paixão pelo café, também valorizamos a conexão humana. 
+            Acreditamos que uma boa xícara de café não apenas desperta os sentidos, mas também cria momentos de convívio 
+            e partilha.
+        </p>
+
+        <p>
+            Junte-se a nós nesta jornada pelo universo do café. Estamos ansiosos para compartilhar a paixão do café com 
+            você!
+        </p>
+        <!-- Clicando no botão "Trabalhe Conosco" redireiona para a tela com o formulário para enviar o currículo -->
+        <a href="trabalhe_conosco.html">
+            <button>Trabalhe Conosco</button>
+        </a>
+      </div>
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
